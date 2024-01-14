@@ -24,7 +24,6 @@ function signuP() {
       Password: exampleInputPassword1.value,
     };
     signUpArry.push(signUP);
-    console.log(signUpArry);
     localStorage.setItem('users',JSON.stringify(signUpArry));
     clearForm();
   } else {
