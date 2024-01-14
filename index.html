@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="style.css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css/inf.css">
+</head>
+<body>
+  <form class="w-50 mx-auto py-4  p-3  my-5 rounded border-black col-md-5  shadow-lg" id="register">
+    <h1 class="text-center">Smart Login System</h1>
+    <div class="mb-3">
+      <label for="PutyourName" class="form-label"></label>
+      <input type="text" class="form-control" id="PutyourName" placeholder="Enter your Name">
+      <P id="userNameAlret" class="text-danger text-center d-none">include at least 1 letters starting with uppercase
+      </P>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label "></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address"  autocomplete="username">
+      <P id="userEamilAlret" class="text-danger text-center d-none">you must put a valid Email like john.doe@example.com
+      </P>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="current-password" autocomplete="current-password" >
+      <ul id="userPassAlret" class="text-danger d-none">
+        <li>at least one lowercase letter.</li>
+        <li> At least one uppercase letter.</li>
+        <li>At least one digit.</li>
+        <li>Consists of the allowed characters (letters, digits, and specific special characters).</li>
+        <li>Has a minimum length of 8 characters.</li>
+      </ul>
+    </div>
+    <div class="d-grid gap-2">
+      <button class="btn btn-outline-success text-capitalize" type="button" id="btnSign"
+        onclick="signuP()">signup</button>
+      <button class="btn btn-outline-primary d-none text-capitalize" type="button" id="btnLog"
+        onclick="logIn()">signin</button>
+        <p class="text-capitalize text-danger d-none text-center" id="fillMassg">fill the inputs first </p>
+        <p class="text-capitalize text-danger d-none text-center" id="wrongMassg">your password or email is incorrect </p>
+    </div>
+    <div class="text-capitalize text-center py-3" id="show">
+      <p>you have Email? <a href="#" class="text-white" onclick="SiG()">log in</a></p>
+    </div>
+    <div class="text-capitalize text-center py-3 d-none " id="btnCall">
+      <p>Don’t have an account? <a href="#" class="text-white" onclick="call()">signUP</a></p>
+    </div>
+    <script src="style.css/bootstrap.bundle.js"></script>
+    <script src="style.css/main.js"></script>
+</body>
+
+</html>
