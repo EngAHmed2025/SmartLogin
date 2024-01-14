@@ -46,15 +46,15 @@ function isExist() {
     if (
       signUpArry[i].Name.toLowerCase() == PutyourName.value.toLowerCase() ||
       signUpArry[i].Email.toLowerCase() ==
-        exampleInputEmail1.value.toLowerCase()
+      exampleInputEmail1.value.toLowerCase()
     ) {
       console.log("Email  Exsit");
       return true;
     }
 
-    console.log("Email is not Exsit");
-    return false;
   }
+  console.log("Email is not Exsit");
+  return false;
 }
 
 function validUserName() {
