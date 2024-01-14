@@ -1,13 +1,13 @@
-var PutyourName = document.getElementById("PutyourName");
-var exampleInputEmail1 = document.getElementById("exampleInputEmail1");
-var exampleInputPassword1 = document.getElementById("exampleInputPassword1");
-var btnLog = document.getElementById("btnLog");
-var btnSign = document.getElementById("btnSign");
-var btnCall = document.getElementById("btnCall");
-var show = document.getElementById("show");
-var wrongMassgAlret = document.getElementById("wrongMassg")
+let PutyourName = document.getElementById("PutyourName");
+let exampleInputEmail1 = document.getElementById("exampleInputEmail1");
+let exampleInputPassword1 = document.getElementById("exampleInputPassword1");
+let btnLog = document.getElementById("btnLog");
+let btnSign = document.getElementById("btnSign");
+let btnCall = document.getElementById("btnCall");
+let show = document.getElementById("show");
+let wrongMassgAlret = document.getElementById("wrongMassg")
 
-var signUpArry = [];
+let signUpArry = [];
 
 if (localStorage.getItem("users") != null) {
   signUpArry = JSON.parse(localStorage.getItem("users"));
@@ -16,9 +16,9 @@ if (localStorage.getItem("users") != null) {
 }
 
 function signuP() {
-  var btnLog = document.getElementById("btnLog");
-  if (AllValid() && isExist() == false) {
-    var signUP = {
+  let btnLog = document.getElementById("btnLog");
+  if (AllValid() && !isExist()) {
+    let signUP = {
       Name: PutyourName.value,
       Email: exampleInputEmail1.value,
       Password: exampleInputPassword1.value,
